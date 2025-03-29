@@ -16,4 +16,9 @@ To run this project:
 
 ## 🔍 Results  
 - **Training Accuracy:** 85.9%  
-- **Test Accuracy:** 85.4%  
+- **Test Accuracy:** 85.4%
+
+- Below are some correctly classified images:  
+  ![Correct Predictions](pe1.png)  
+- Below are some misclassified images:  
+  ![Misclassified Images](pe2.png)  
