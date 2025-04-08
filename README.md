@@ -18,54 +18,31 @@ This project implements a Least Squares Classifier to recognize handwritten digi
 ## 🛠 Explanation  
 
 ### **1. Training and Test Accuracy Results**  
-- **Training Set Accuracy:** 85.9%  
-- **Test Set Accuracy:** 85.4%  
+- **Training Accuracy:** 85.9%  
+- **Test Accuracy:** 85.4%  
 
-The model achieves moderate accuracy on both training and test sets, indicating that it generalizes reasonably well but struggles with certain aspects of the dataset's complexity.  
+The model performs moderately well but struggles with certain complexities in the dataset.
 
 ---
 
 ### **2. Discussion of Misclassified Examples**  
-Misclassifications occur due to several reasons:  
-
-1. **Similar Structures Between Digits:**  
-   - Example: Digit '9' misclassified as '4'.  
-   - Reason: Digits with overlapping features are challenging for a linear classifier to distinguish.  
-
-2. **Diverse Handwriting Styles:**  
-   - Example: Digit '8' misclassified as '7'.  
-   - Reason: Variations in handwriting styles make some digits harder to classify accurately.  
-
-3. **Noise in Images:**  
-   - Example: Faint strokes or extra pixels can confuse the model, leading to errors like '3' misclassified as '1'.  
-
-4. **Linear Model Limitations:**  
-   - The least squares method cannot capture non-linear features in the data, which are essential for distinguishing complex patterns in MNIST.  
-
-5. **Global Weight Matrix Constraint:**  
-   - The model uses a single global weight matrix, which lacks flexibility to account for local variations within each digit class.
+Misclassifications occur due to:  
+1. **Similar Digit Structures:** e.g., '9' misclassified as '4'.  
+2. **Diverse Handwriting Styles:** e.g., '8' misclassified as '7'.  
+3. **Noise in Images:** Faint strokes or extra pixels confuse the model.  
+4. **Linear Model Limitations:** Cannot capture non-linear patterns.  
+5. **Global Weight Matrix Constraint:** Lacks flexibility for local variations.
 
 ---
 
-### **3. Why Least Squares Classifier May Perform Worse on MNIST**  
-The limitations of the Least Squares Classifier on MNIST can be summarized as follows:  
+### **3. Why Least Squares Performs Worse on MNIST**  
+1. **Linear Boundaries:** Cannot handle MNIST’s complex patterns.  
+2. **Limited Flexibility:** Struggles with diverse handwriting styles.  
+3. **Sensitive to Noise/Outliers:** Noisy data impacts predictions significantly.  
+4. **Overfitting to Outliers:** May overfit mislabeled or noisy examples.  
+5. **No Feature Learning:** Does not learn abstract features like curves or edges.
 
-1. **Linear Decision Boundaries:**  
-   - The least squares method is a linear classifier, which cannot handle the non-linear decision boundaries required for separating complex patterns in MNIST (e.g., '4' vs. '9', '3' vs. '8').  
-
-2. **Lack of Flexibility for Local Variations:**  
-   - A single weight matrix is used for all classes, making it difficult to adapt to diverse handwriting styles within each digit class.  
-
-3. **Sensitivity to Noise and Outliers:**  
-   - The least squares method minimizes the sum of squared errors, making it sensitive to noise or mislabeled data points, which can lead to significant prediction errors.  
-
-4. **Overfitting to Outliers:**  
-   - The model may overfit noisy or mislabeled examples, reducing its ability to generalize effectively across the dataset.  
-
-5. **No Hierarchical Feature Learning:**  
-   - Unlike neural networks or other advanced models, the least squares classifier does not learn abstract features such as edges or shapes that are critical for digit recognition.
-
-These factors contribute to its lower performance compared to non-linear classifiers like Support Vector Machines (SVMs) or deep learning models.
+These limitations make it less effective compared to non-linear models like SVMs or neural networks.
 
 ---
 
