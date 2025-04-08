@@ -1,8 +1,5 @@
 # MNIST Classification Using Least Squares  
 
-**Date:** November 10, 2024  
-**Author:** Sachin Yadav (21CE3AI15)  
-
 This project implements a Least Squares Classifier to recognize handwritten digits from the MNIST dataset. It provides insights into the model's performance, discusses misclassifications, and highlights the limitations of using Least Squares for MNIST classification.  
 
 ---
