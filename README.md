@@ -11,6 +11,19 @@ This project implements a Least Squares Classifier to recognize handwritten digi
 - **Visualization:** Displays correctly classified and misclassified images for better interpretability.  
 
 ---
+## 🔍 Results Summary  
+
+- **Training Accuracy:** 85.9%  
+- **Test Accuracy:** 85.4%  
+
+### Visualizations:  
+1. Correctly classified images:  
+   ![Correct Predictions](pe1.png)  
+
+2. Misclassified images:  
+   ![Misclassified Images](pe2.png)  
+
+---
 
 ## 🛠 Explanation  
 
@@ -43,18 +56,6 @@ These limitations make it less effective compared to non-linear models like SVMs
 
 ---
 
-## 🔍 Results Summary  
 
-- **Training Accuracy:** 85.9%  
-- **Test Accuracy:** 85.4%  
-
-### Visualizations:  
-1. Correctly classified images:  
-   ![Correct Predictions](pe1.png)  
-
-2. Misclassified images:  
-   ![Misclassified Images](pe2.png)  
-
----
 
 
