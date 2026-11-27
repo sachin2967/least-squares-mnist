@@ -1,17 +1,21 @@
-# MNIST Classification Using Least Squares  
+# MNIST Classification Using Least Squares
 
-This project implements a Least Squares Classifier to recognize handwritten digits from the MNIST dataset. It provides insights into the model's performance, discusses misclassifications, and highlights the limitations of using Least Squares for MNIST classification.  
+A course-assignment exercise that implements a one-vs-rest least-squares classifier for handwritten digit recognition on MNIST. It reports the original notebook's training/test results and discusses the limitations of a linear least-squares model.
+
+**Notebook:** [Open the original assignment notebook](https://github.com/sachin2967/least-squares-mnist/blob/main/LAAIML24_21CE3AI15_MNIST__Assignment.ipynb).
+
+> **Academic and licensing note:** this repository includes an assignment-named notebook. Check applicable course rules before redistribution. No open-source licence is specified, so all rights remain with the respective copyright holders.
 
 ---
 
-## 📌 Features  
+## Features  
 - **Dataset:** MNIST handwritten digits dataset fetched using `scikit-learn`.  
 - **Model:** Least Squares Classifier implemented using `numpy.linalg.lstsq`.  
 - **Evaluation Metrics:** Training and test accuracy, along with analysis of misclassified examples.  
 - **Visualization:** Displays correctly classified and misclassified images for better interpretability.  
 
 ---
-## 🔍 Results Summary  
+## Results Summary  
 
 - **Training Accuracy:** 85.9%  
 - **Test Accuracy:** 85.4%  
@@ -25,7 +29,7 @@ This project implements a Least Squares Classifier to recognize handwritten digi
 
 ---
 
-## 🛠 Explanation  
+## Explanation  
 
 ### **1. Training and Test Accuracy Results**  
 - **Training Accuracy:** 85.9%  
